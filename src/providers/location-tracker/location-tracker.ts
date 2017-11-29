@@ -32,7 +32,6 @@ export class LocationTrackerProvider {
 	  this.backgroundGeolocation.configure(config).subscribe((location) => {
 	 
 	    console.log('BackgroundGeolocation:  ' + location.latitude + ',' + location.longitude);
-	 
 	    // Run update inside of Angular's zone
 	    this.zone.run(() => {
 	      this.lat = location.latitude;
@@ -52,8 +51,7 @@ export class LocationTrackerProvider {
 	  // Foreground Tracking
 	 
 	let options = {
-	  frequency: 3000,
-	  enableHighAccuracy: true
+	  
 	};
 	 
 	this.watch = this.geolocation.watchPosition(options).filter((p: any) => p.code === undefined).subscribe((position: Geoposition) => {

@@ -1,6 +1,6 @@
 {
   "name": "nav",
-  "app_id": "",
+  "app_id": "c8273d50",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
