@@ -18,7 +18,7 @@ export class HomePage {
   map: any;
   marker: any;
  
-  constructor(public navCtrl: NavController, public geolocation: Geolocation, public locationTracker: LocationTrackerProvider) {
+  constructor(public navCtrl: NavController, public geolocation: Geolocation) {
 
   }
  
